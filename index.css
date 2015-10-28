@@ -1,0 +1,141 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    background-image: url(http://www.designfreebies.org/wp-content/uploads/2011/09/free-psd-templates-wallpapers-backgrounds-5.jpg);
+    background-repeat: repeat;
+    -webkit-background-size: 100%,cover;
+    -moz-background-size: 100%,cover;
+    -o-background-size: 100%,cover;
+    background-size: 100%,cover;
+    font-size: 0.9em;
+}
+
+h1
+{
+    font-size: 38px;
+    text-align: justify;
+}
+
+header
+{
+    text-shadow: 1px 1px 2px #c5a14b, 0 0 2em #ccc;
+    color: #000;
+}
+
+article
+{
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-rule: 1px solid #674e13;
+    -webkit-column-rule: 1px solid #674e13;
+    -moz-column-rule: 1px solid #674e13;
+    font-family: serif;
+    background: rgba(197, 161, 75, 0.3);
+    font-family: 'Noto Serif', serif;
+    line-height: 2.0;
+}
+
+p
+{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+p::first-line
+{
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+p::first-letter,
+q::first-letter
+{
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+span,
+div
+{
+    float: left;
+    border: 1px solid #333;
+    padding: 7px;
+    background: rgba(227, 195, 117, 0.9);
+    font-size: 0.8em;
+    font-family: 'Old Standard TT', serif;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+img
+{
+    width: 100%;
+    float:left;
+}
+
+footer
+{
+    float: right;
+}
+
+a
+{
+    text-decoration: none;
+    color: #674e13;
+}
+
+a:hover
+{
+    color: #000;
+}
+
+blockquote
+{
+    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    break-inside: avoid;
+    break-before: column;
+    break-after: column;
+    display: block;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    text-shadow: 2px 2px 2px #c5a14b, 0 0 3em #ccc;
+}
+
+blockquote::first-line
+{
+    line-height: 1.4;
+}
+
+.quote
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3e2d04;
+    line-height: 1.5;
+}
+
+button
+{
+    background: rgba(227, 195, 117, 0.9);
+}
+
+input.plus:checked ~ article
+{
+    font-size: 30px;
+}
+
+input.minus:checked ~ article
+{
+    font-size: 0.9em;
+}
