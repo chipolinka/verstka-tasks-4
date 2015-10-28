@@ -7,7 +7,7 @@ body
 
 body
 {
-    background-image: url(http://www.designfreebies.org/wp-content/uploads/2011/09/free-psd-templates-wallpapers-backgrounds-5.jpg);
+    background-image: url(http://bit.ly/1Hc1mLt);
     background-repeat: repeat;
     -webkit-background-size: 100%,cover;
     -moz-background-size: 100%,cover;
@@ -48,7 +48,8 @@ p
     margin-bottom: 0;
 }
 
-p::first-line
+p::first-line,
+th
 {
     line-height: 1.4;
     vertical-align: middle;
@@ -125,17 +126,44 @@ blockquote::first-line
     line-height: 1.5;
 }
 
-button
+input[value="plus"]:checked ~ article
 {
-    background: rgba(227, 195, 117, 0.9);
+    font-size: 1.5em;
 }
 
-input.plus:checked ~ article
-{
-    font-size: 30px;
-}
-
-input.minus:checked ~ article
+input[value="minus"]:checked ~ article
 {
     font-size: 0.9em;
+}
+
+input[value="Courgette"]:checked ~ article
+{
+    font-family: 'Courgette', cursive;
+}
+
+input[value="Noto Serif"]:checked ~ article p:not(blockquote)
+{
+    font-family: 'Noto Serif', serif;
+}
+
+input[value="dark"]:checked ~ article
+{
+    background: #151003;
+    color: #f0dba6;
+}
+
+input[value="dark"]:checked ~ article span
+{
+    background: #5e4916;
+}
+
+input[value="dark"]:checked ~ article p::first-letter
+{
+    color: #f0dba6;
+}
+
+input[value="light"]:checked ~ article
+{
+    background: rgba(197, 161, 75, 0.3);
+    color: #000;
 }
