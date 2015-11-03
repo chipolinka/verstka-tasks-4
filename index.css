@@ -7,7 +7,7 @@ body
 
 body
 {
-    background-image: url(http://bit.ly/1Hc1mLt);
+    background-image: url(http://bit.ly/1GIWbIi);
     background-repeat: repeat;
     -webkit-background-size: 100%,cover;
     -moz-background-size: 100%,cover;
@@ -26,6 +26,8 @@ header
 {
     text-shadow: 1px 1px 2px #c5a14b, 0 0 2em #ccc;
     color: #000;
+    font-family: 'IM Fell English SC', serif;
+    border-top: 1px solid #674e13;
 }
 
 article
@@ -83,11 +85,6 @@ img
     float:left;
 }
 
-footer
-{
-    float: right;
-}
-
 a
 {
     text-decoration: none;
@@ -118,7 +115,7 @@ blockquote::first-line
     line-height: 1.4;
 }
 
-.quote
+.bigSizeQuote
 {
     font-size: 1.5em;
     font-weight: bold;
@@ -126,43 +123,48 @@ blockquote::first-line
     line-height: 1.5;
 }
 
-input[value="plus"]:checked ~ article
+footer
+{
+    float: right;
+}
+
+input[value="plus"]:checked ~ main article
 {
     font-size: 1.5em;
 }
 
-input[value="minus"]:checked ~ article
+input[value="minus"]:checked ~ main article
 {
     font-size: 0.9em;
 }
 
-input[value="Courgette"]:checked ~ article
+input[value="Slabo"]:checked ~ main article
 {
-    font-family: 'Courgette', cursive;
+    font-family: 'Slabo 27px', serif;
 }
 
-input[value="Noto Serif"]:checked ~ article p:not(blockquote)
+input[value="Noto Serif"]:checked ~ main article p:not(blockquote)
 {
     font-family: 'Noto Serif', serif;
 }
 
-input[value="dark"]:checked ~ article
+input[value="dark"]:checked ~ main article
 {
     background: #151003;
     color: #f0dba6;
 }
 
-input[value="dark"]:checked ~ article span
+input[value="dark"]:checked ~ main article span
 {
     background: #5e4916;
 }
 
-input[value="dark"]:checked ~ article p::first-letter
+input[value="dark"]:checked ~ main article p::first-letter
 {
     color: #f0dba6;
 }
 
-input[value="light"]:checked ~ article
+input[value="light"]:checked ~ main article
 {
     background: rgba(197, 161, 75, 0.3);
     color: #000;
